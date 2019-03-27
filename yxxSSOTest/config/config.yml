@@ -1,0 +1,38 @@
+# login http request
+LoginURL: https://qapreview.huanxi.com/sso/app/Login/locallogin
+LoginParam: {"phone":"18813009413","pwd":"xxxxxxxx1"}
+Method: POST
+
+# message code for phone 16619884679
+messageCode: 123456
+
+# 忘记密码
+verifyURL: https://qasso.huanxi.com/app/User/verityCode
+verifyParam: {'phone':'18813009413','code':'123456'}
+Method1: POST
+
+# mysql host address, username, password
+mysqlHost: 'jdbc:mysql://pccw-test-public.mysql.rds.aliyuncs.com'
+mysqlPort: 3306
+mysqlDatabase: 'huanxi_cms_qa'
+mysqLUserName: 'pccw'
+mysqlPassWord: '#EDC3edc'
+
+# mock Hxut value
+mockHxut: '6b18978a746ce73727382af6aad4f8f4kHPdlpYRSjAR69bW0fWAbK5LI469DI1bgsG0OTp0JyLMPClSQNffZimRa4CmelCn08YcWphJLegL/SVuPGHvEWwNjniRtntda4w9RONYmwk='
+
+# Hxut value for PC
+pcHxut: 'e45c85dc7c606cca353326accd6bfe1dQSgdfBT5WtTFD6YsPmE70gBlL1Qs5e%2F0xyACHSI7pXuqp3XaAVDo7Y494PK3Zh6lv4rOLBKatm%2BnjbumFMGUwa73UfLigVJUMt0U9COXC5k%3D'
+
+# SSO APP URL
+SSO_APP_URL: https://qapreview.huanxi.com/sso/app
+
+# SSO PC URL
+SSO_PC_URL: https://qapreview.huanxi.com/sso
+
+report: \report\
+case: \ssoTestCase\
+
+
+
+
