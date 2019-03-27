@@ -5,6 +5,7 @@ import requests
 import xlrd
 from config import ymlConfig
 from logger import log
+import os
 import pymysql
 
 
@@ -24,7 +25,9 @@ class Util:
     def read_excel_row(self, test_name):
         try:
             #打开指定位置的excel
-            excelFile = xlrd.open_workbook(r'D:\python_work\SSOTest\util\test.xlsx')
+            project_path = os.path.abspath(os.path.join(os.getcwd(), "."))
+            logPath = project_path + "\\util\\test.xlsx"
+            excelFile = xlrd.open_workbook(logPath)
             # 根据索引的方式，打开第一个sheet页
             sheet = excelFile.sheet_by_index(0)
             #根据sheet的名字获取
